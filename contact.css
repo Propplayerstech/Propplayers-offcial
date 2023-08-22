@@ -1,0 +1,40 @@
+.contact-hero{
+    max-width: 100%;
+    height: 150px;
+    /* background-image: url("images/contact-banner.jpg"); */
+    background-color: #B9D3EC;
+    background-repeat:no-repeat;
+    overflow-x: hidden;
+    background-size: 100% 100%;
+    text-align: center;
+    position: relative;
+}
+.contact-title{
+    margin-top: 6%;
+}
+
+
+.contact-section{
+    margin-top: 50px;
+}
+
+.contact-img{
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+}
+.submit-btn{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+@media only screen and (min-width: 1240px){
+    .contact-img{
+        margin-left: 100px;
+    }
+    .contact-hero{
+        height: 150px;
+    }
+}
+
