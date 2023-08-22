@@ -754,6 +754,11 @@ div.tab button.active {
 }
 .section-heading{
   margin-bottom: 2%;
+  color: #004658;
+  font-weight: bold;
+}
+.heading-with-picture{
+  color: #004658;
 }
 
 
