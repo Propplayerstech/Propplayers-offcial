@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css'>
@@ -12,7 +13,7 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css" />
+    
     <link rel="stylesheet" href="navbar.css" />
     <link rel="stylesheet" href="footer.css" />
     <script src="script.js" defer></script>
@@ -24,7 +25,7 @@
       <nav class="nav">
         <div class="container">
             <div class="logo">
-                <a href="#"><img src="images/mylogo.png" alt="Propplayers Logo" class="logo"></a>
+                <a href="https://propplayers.com/"><img src="images/mylogo.png" alt="Propplayers Logo" class="logo"></a>
             </div>
             <div id="mainListDiv" class="main_list">
                 <ul class="navlinks">
@@ -44,7 +45,7 @@
     <section class="top-section full-screen-section ">
       <div class="hero">
         <div class="tagline">
-          <h1 data-aos="fade-up-right" data-aos-duration="1000">Empower Your Search <br><span>with PropPlayers</span> </h1>
+          <h1 data-aos="fade-up-right" data-aos-duration="1000" style="font-size: 5rem;">Empower Your Search <br><span>with PropPlayers</span> </h1>
           <h2 data-aos="slide-up" data-aos-duration="1500" style="color: black;">Where Comfort Meets Realty</h2>
           <br>
           <p>
@@ -106,29 +107,117 @@
 
                                            <!-- Properties Section -->
 
-    <section class="full-screen-section properties-section" data-aos="fade-up" data-aos-duration="2500">
+    <section class="full-screen-section properties-section" data-aos="fade-up" data-aos-duration="2500" style="margin-bottom: 4%;">
       <h2 class="section-heading">WHAT ARE YOU LOOKING FOR ?</h2>
       <div class="divider section-heading">
         <img src="images/divider.png" alt="">
       </div>
-      <h4 style="font-size: 16px;">Stay Up-to-Date on New Property Options, Best Investment Opportunities, and What's Coming Nex</h4>
-      <div id="tabs" >
-
-                                                                            <!-- Residential -->
-        <span id="tab-1" class="tab-switch  "></span>
-        <a href="#tab-1" class="tab-link tab-1">Residential</a>
-        <div class="tab-content">
-            <div class="properties-content-carousal">
+      <h4 style="font-size: 16px;">Stay Up-to-Date on New Property Options, Best Investment Opportunities, and What's Coming Next</h4>
+      <div class="tab">
+        <button class="tablinks active" onclick="openProperty(event, 'Residential')">Residential</button>
+        <button class="tablinks" onclick="openProperty(event, 'Commercial')">Commercial</button>
+        <button class="tablinks" onclick="openProperty(event, 'SCO')">SCO</button>
+      </div>
+      
+      <div id="Residential" class="tabcontent" style="display:block;">
+              <div class="properties-content-carousal">
+                <main>
+                  <div class="prop-section">
+                    <div class="product">
+                      <picture>
+                        <img src="properties/residential/trump.jpeg" alt="">
+                      </picture>
+                      <div class="detail">
+                        <h5>TRUMP TOWERS</h5>
+                        <p class="ultra-luxury">Ultra LUXURY..</p>
+                        <p class="price-range">8cr* Onwards</p>
+                        <div class="more-details">
+                          <a href="#">More Details</a>
+                        </div>    
+                      </div>
+                    </div>
+                    <div class="product">
+                      <picture>
+                        <img src="properties/residential/orchARD.jpg" alt="">
+                      </picture>
+                      <div class="detail">
+                        <h5>SMART WORLD ORCHARD</h5>
+                        <p class="ultra-luxury">Ultra LUXURY..</p>
+                        <p class="price-range">1.5cr* Onwards</p>
+                        <div class="more-details">
+                          <a href="#">More Details</a>
+                        </div>    
+                      </div>
+                    </div>
+                    <div class="product">
+                      <picture>
+                        <img src="properties/residential/p5916br0.jpg" alt="">
+                      </picture>
+                      <div class="detail">
+                        <h5>M3M GOLF HILLS</h5>
+                        <p class="ultra-luxury">Ultra LUXURY..</p>
+                        <p class="price-range">1.5cr* Onwards</p>
+                        <div class="more-details">
+                          <a href="#">More Details</a>
+                        </div>    
+                      </div>
+                    </div>
+                    <div class="product">
+                      <picture>
+                        <img src="properties/residential/emaar62.png" alt="">
+                      </picture>
+                      <div class="detail">
+                        <h5>EMAAR DIGI HOMES</h5>
+                        <p class="ultra-luxury">Ultra LUXURY..</p>
+                        <p class="price-range">2cr* Onwards</p>
+                        <div class="more-details">
+                          <a href="#">More Details</a>
+                        </div>    
+                      </div>
+                    </div>
+      
+                    <div class="product">
+                      <picture>
+                        <img src="properties/residential/golfesate2.jpg" alt="">
+                      </picture>
+                      <div class="detail">
+                        <h5>GOLF ESTATE 2.0</h5>
+                        <p class="ultra-luxury">Ultra LUXURY..</p>
+                        <p class="price-range">8cr* Onwards</p>
+                        <div class="more-details">
+                          <a href="#">More Details</a>
+                        </div>    
+                      </div>
+                    </div>
+                    <div class="product">
+                      <picture>
+                        <img src="properties/residential/emaar62.png" alt="">
+                      </picture>
+                      <div class="detail">
+                        <h5>ADANI SAMSARA</h5>
+                        <p class="ultra-luxury">Ultra LUXURY..</p>
+                        <p class="price-range">2.5cr* Onwards</p>
+                        <div class="more-details">
+                          <a href="#">More Details</a>
+                        </div>    
+                      </div>
+                  </div>
+                  </div>
+                  </main>
+                  </div>
+      </div>
+      
+      <div id="Commercial" class="tabcontent">
+          <div class="properties-content-carousal">
               <main>
                 <div class="prop-section">
                   <div class="product">
                     <picture>
-                      <img src="properties/residential/trump.jpeg" alt="">
+                      <img src="properties/commercial/broadway111.png" alt="">
                     </picture>
                     <div class="detail">
-                      <h5>TRUMP TOWERS</h5>
-                      <p class="ultra-luxury">Ultra LUXURY..</p>
-                      <p class="price-range">8cr* Onwards</p>
+                      <h5>M3M BRAODWAY</h5>
+                      <p class="price-range">80lacs* Onwards</p>
                       <div class="more-details">
                         <a href="#">More Details</a>
                       </div>    
@@ -136,12 +225,12 @@
                   </div>
                   <div class="product">
                     <picture>
-                      <img src="properties/residential/orchARD.jpg" alt="">
+                      <img src="properties/commercial/corner walk.jpg" alt="">
                     </picture>
                     <div class="detail">
-                      <h5>SMART WORLD ORCHARD</h5>
-                      <p class="ultra-luxury">Ultra LUXURY..</p>
-                      <p class="price-range">1.5cr* Onwards</p>
+                      <h5>M3M CORNER WALK</h5>
+                      <p class="ultra-luxury">High Street Retail..</p>
+                      <p class="price-range">90lacs* Onwards</p>
                       <div class="more-details">
                         <a href="#">More Details</a>
                       </div>    
@@ -149,12 +238,12 @@
                   </div>
                   <div class="product">
                     <picture>
-                      <img src="properties/residential/p5916br0.jpg" alt="">
+                      <img src="properties/commercial/capitalwalk2.jpg" alt="">
                     </picture>
                     <div class="detail">
-                      <h5>M3M GOLF HILLS</h5>
-                      <p class="ultra-luxury">Ultra LUXURY..</p>
-                      <p class="price-range">1.5cr* Onwards</p>
+                      <h5>M3M CAPITAL WALK</h5>
+                      <p class="ultra-luxury">High Street Retail..</p>
+                      <p class="price-range">80lacsr* Onwards</p>
                       <div class="more-details">
                         <a href="#">More Details</a>
                       </div>    
@@ -162,26 +251,25 @@
                   </div>
                   <div class="product">
                     <picture>
-                      <img src="properties/residential/emaar62.png" alt="">
+                      <img src="properties/commercial/ebd114.jpg" alt="">
                     </picture>
                     <div class="detail">
-                      <h5>EMAAR DIGI HOMES</h5>
-                      <p class="ultra-luxury">Ultra LUXURY..</p>
-                      <p class="price-range">2cr* Onwards</p>
+                      <h5>EMAAR THE MARK</h5>
+                      <p class="ultra-luxury">High Street Retail..</p>
+                      <p class="price-range">1.20cr* Onwards</p>
                       <div class="more-details">
                         <a href="#">More Details</a>
                       </div>    
                     </div>
                   </div>
-
+      
                   <div class="product">
                     <picture>
-                      <img src="properties/residential/golfesate2.jpg" alt="">
+                      <img src="properties/commercial/m3m57.jpg" alt="">
                     </picture>
                     <div class="detail">
-                      <h5>GOLF ESTATE 2.0</h5>
-                      <p class="ultra-luxury">Ultra LUXURY..</p>
-                      <p class="price-range">8cr* Onwards</p>
+                      <h5>M3M PARAGON 57</h5>
+                      <p class="price-range">1.0cr* Onwards</p>
                       <div class="more-details">
                         <a href="#">More Details</a>
                       </div>    
@@ -189,192 +277,97 @@
                   </div>
                   <div class="product">
                     <picture>
-                      <img src="properties/residential/emaar62.png" alt="">
+                      <img src="properties/commercial/route65.jpg" alt="">
                     </picture>
                     <div class="detail">
-                      <h5>ADANI SAMSARA</h5>
-                      <p class="ultra-luxury">Ultra LUXURY..</p>
+                      <h5>M3M ROUTE 65</h5>
+                      <p class="ultra-luxury">High Street Retail..</p>
+                      <p class="price-range">1.10cr* Onwards</p>
+                      <div class="more-details">
+                        <a href="#">More Details</a>
+                      </div>    
+                    </div>
+                </div>
+                </div>
+                </main>
+                </div> 
+      </div>
+      
+      <div id="SCO" class="tabcontent">
+          <div class="properties-content-carousal">
+              <main>
+                <div class="prop-section">
+                  <div class="product">
+                    <picture>
+                      <img src="properties/sco/sco.jpg" alt="">
+                    </picture>
+                    <div class="detail">
+                      <h5>M3M SCO 113</h5>
+                      <p class="price-range">3.5cr* Onwards</p>
+                      <div class="more-details">
+                        <a href="#">More Details</a>
+                      </div>    
+                    </div>
+                  </div>
+                  <div class="product">
+                    <picture>
+                      <img src="properties/sco/scodlf.webp" alt="">
+                    </picture>
+                    <div class="detail">
+                      <h5>DLF SCO 73</h5>
+                      <p class="price-range">3cr* Onwards</p>
+                      <div class="more-details">
+                        <a href="#">More Details</a>
+                      </div>    
+                    </div>
+                  </div>
+                  <div class="product">
+                    <picture>
+                      <img src="properties/sco/parassco.jpg" alt="">
+                    </picture>
+                    <div class="detail">
+                      <h5>PARAS SCO 114</h5>
                       <p class="price-range">2.5cr* Onwards</p>
                       <div class="more-details">
                         <a href="#">More Details</a>
                       </div>    
                     </div>
+                  </div>
+                  <div class="product">
+                    <picture>
+                      <img src="properties/sco/edb89.jpg" alt="">
+                    </picture>
+                    <div class="detail">
+                      <h5>EMAAR SCO 89</h5>
+                      <p class="price-range">3.5cr* Onwards</p>
+                      <div class="more-details">
+                        <a href="#">More Details</a>
+                      </div>    
+                    </div>
+                  </div>
+      
+                  <div class="product">
+                    <picture>
+                      <img src="properties/sco/ebd65.jpg" alt="">
+                    </picture>
+                    <div class="detail">
+                      <h5>EMAAR SCO EDB 65</h5>
+                      <p class="price-range">3cr* Onwards</p>
+                      <div class="more-details">
+                        <a href="#">More Details</a>
+                      </div>    
+                    </div>
+                  </div>
+                 
                 </div>
-                </div>
-              </main>              
+              </main>   
             </div>
-        </div>
-    
-                                                                      <!-- Commercial -->
-        <span id="tab-2" class="tab-switch"></span>
-        <a href="#tab-2" class="tab-link tab-2">Commercial</a>
-        <div class="tab-content">
-          <div class="properties-content-carousal">
-            <main>
-              <div class="prop-section">
-                <div class="product">
-                  <picture>
-                    <img src="properties/commercial/broadway111.png" alt="">
-                  </picture>
-                  <div class="detail">
-                    <h5>M3M BRAODWAY</h5>
-                    <p class="price-range">80lacs* Onwards</p>
-                    <div class="more-details">
-                      <a href="#">More Details</a>
-                    </div>    
-                  </div>
-                </div>
-                <div class="product">
-                  <picture>
-                    <img src="properties/commercial/corner walk.jpg" alt="">
-                  </picture>
-                  <div class="detail">
-                    <h5>M3M CORNER WALK</h5>
-                    <p class="ultra-luxury">High Street Retail..</p>
-                    <p class="price-range">90lacs* Onwards</p>
-                    <div class="more-details">
-                      <a href="#">More Details</a>
-                    </div>    
-                  </div>
-                </div>
-                <div class="product">
-                  <picture>
-                    <img src="properties/commercial/capitalwalk2.jpg" alt="">
-                  </picture>
-                  <div class="detail">
-                    <h5>M3M CAPITAL WALK</h5>
-                    <p class="ultra-luxury">High Street Retail..</p>
-                    <p class="price-range">80lacsr* Onwards</p>
-                    <div class="more-details">
-                      <a href="#">More Details</a>
-                    </div>    
-                  </div>
-                </div>
-                <div class="product">
-                  <picture>
-                    <img src="properties/commercial/ebd114.jpg" alt="">
-                  </picture>
-                  <div class="detail">
-                    <h5>EMAAR THE MARK</h5>
-                    <p class="ultra-luxury">High Street Retail..</p>
-                    <p class="price-range">1.20cr* Onwards</p>
-                    <div class="more-details">
-                      <a href="#">More Details</a>
-                    </div>    
-                  </div>
-                </div>
-
-                <div class="product">
-                  <picture>
-                    <img src="properties/commercial/m3m57.jpg" alt="">
-                  </picture>
-                  <div class="detail">
-                    <h5>M3M PARAGON 57</h5>
-                    <p class="price-range">1.0cr* Onwards</p>
-                    <div class="more-details">
-                      <a href="#">More Details</a>
-                    </div>    
-                  </div>
-                </div>
-                <div class="product">
-                  <picture>
-                    <img src="properties/commercial/route65.jpg" alt="">
-                  </picture>
-                  <div class="detail">
-                    <h5>M3M ROUTE 65</h5>
-                    <p class="ultra-luxury">High Street Retail..</p>
-                    <p class="price-range">1.10cr* Onwards</p>
-                    <div class="more-details">
-                      <a href="#">More Details</a>
-                    </div>    
-                  </div>
-              </div>
-              </div>
-            </main>   
-          </div>
-        </div>
-    
-                                                   <!-- SCO -->
-        <span id="tab-3" class="tab-switch"></span>
-        <a href="#tab-3" class="tab-link tab-3">SCO</a>
-        <div class="tab-content">
-          <div class="properties-content-carousal">
-            <main>
-              <div class="prop-section">
-                <div class="product">
-                  <picture>
-                    <img src="properties/sco/sco.jpg" alt="">
-                  </picture>
-                  <div class="detail">
-                    <h5>M3M SCO 113</h5>
-                    <p class="price-range">3.5cr* Onwards</p>
-                    <div class="more-details">
-                      <a href="#">More Details</a>
-                    </div>    
-                  </div>
-                </div>
-                <div class="product">
-                  <picture>
-                    <img src="properties/sco/scodlf.webp" alt="">
-                  </picture>
-                  <div class="detail">
-                    <h5>DLF SCO 73</h5>
-                    <p class="price-range">3cr* Onwards</p>
-                    <div class="more-details">
-                      <a href="#">More Details</a>
-                    </div>    
-                  </div>
-                </div>
-                <div class="product">
-                  <picture>
-                    <img src="properties/sco/parassco.jpg" alt="">
-                  </picture>
-                  <div class="detail">
-                    <h5>PARAS SCO 114</h5>
-                    <p class="price-range">2.5cr* Onwards</p>
-                    <div class="more-details">
-                      <a href="#">More Details</a>
-                    </div>    
-                  </div>
-                </div>
-                <div class="product">
-                  <picture>
-                    <img src="properties/sco/edb89.jpg" alt="">
-                  </picture>
-                  <div class="detail">
-                    <h5>EMAAR SCO 89</h5>
-                    <p class="price-range">3.5cr* Onwards</p>
-                    <div class="more-details">
-                      <a href="#">More Details</a>
-                    </div>    
-                  </div>
-                </div>
-
-                <div class="product">
-                  <picture>
-                    <img src="properties/sco/ebd65.jpg" alt="">
-                  </picture>
-                  <div class="detail">
-                    <h5>EMAAR SCO EDB 65</h5>
-                    <p class="price-range">3cr* Onwards</p>
-                    <div class="more-details">
-                      <a href="#">More Details</a>
-                    </div>    
-                  </div>
-                </div>
-               
-              </div>
-            </main>  
-
-            
-          </div>
-        </div>
-    </div>
+      </div>
     </section>
 
             <!-- About Us -->
 
-    <section class="full-screen-section about-us" data-aos="fade-up" data-aos-duration="2500">
+    <section class="full-screen-section about-us section-margin" data-aos="fade-up" data-aos-duration="2500">
       <div class="row">
         <div class="col about-content">
             <h3 class="text-center">About Us</h3>
@@ -730,7 +723,7 @@
                     <a target="_blank" rel="noopener noreferrer" href="contact.html">Support Center</a>
                   </li>
                   <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                    <a target="_blank" rel="noopener noreferrer" href="about.html">Service Status</a>
+                    <a target="_blank" rel="noopener noreferrer" href="about.html">Services</a>
                   </li>
                   <!-- <li class="menu-item menu-item-type-post_type menu-item-object-page">
                     <a href="#">Security</a>
