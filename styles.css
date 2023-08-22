@@ -464,7 +464,7 @@ div.tab button.active {
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 1.5rem;
   padding: 3rem 9%;
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
   position: relative;
 }
 .counter-wrapper::before{
